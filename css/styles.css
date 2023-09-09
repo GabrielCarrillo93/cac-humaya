@@ -1,3 +1,63 @@
+/* Importaciones */
+@import url('variables.css');
+
+/* Estilos mobile*/
+
+header{
+    background-image: url("../assets/img/IMAGENES/imagenCentral.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+nav{
+    display: flex;
+    background-color: var(--color-main);
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .3rem;
+    padding-inline: 1rem;
+}
+
+.links{
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    display: none;
+}
+
+.hamburguesa{
+    background-color: var(--color-main);
+    border-radius: 15px;
+    border: none;
+}
+
+.hamburguesa > img {
+    width: 40%;
+}
+
+.contenedor{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .alinear{
-    
+    color: white;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    transform: translateY(-50%);
+    padding: 2rem;
+}
+
+.alinear > button{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border-radius: 100vmax;
+    padding: 1rem 2rem;
+    border: none;
 }
