@@ -9,18 +9,19 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navBar">
         <div class="logo">
             <img src="assets/img/IMAGENES/Logo/LogoMenu60x48.png" alt="logo humaya">
         </div>
         <div class="menu">
-            <button class="hamburguesa"><img src="assets/img/IMAGENES/hamburger.png" alt=""></button>
+            <button class="hamburguesa" id="hamburguesa"><img src="assets/img/IMAGENES/hamburger.png" alt=""></button>
         </div>
-        <div class="links">
+        <div id="links" class="links none">
             <a href="#">Home</a>
             <a href="#productos">Productos</a>
             <a href="#locales">Locales</a>
-            <a href="#Contacto">Contacto</a>
+            <a href="#recetas">recetas</a>
+            <a href="#contacto">Contacto</a>
             </div>
         </nav>
         <div class="contenedor">
@@ -54,7 +55,7 @@
             <h2 class="titulos">Productos</h2>
             <div class="producto">
                 <img src="assets/img/IMAGENES/Productos/Producto1.png" alt="">
-                <div>
+                <div class="productoDescripcion">
                     <h3>DULCE DE LECHE TRADICIONAL</h3>
                     <p>Elaboración artesanal de principio a fin, con un sabor intenso, receta tradicional.</p>
                     <span>Presentación en frasco de vidrio de 580gr.</span>
@@ -63,7 +64,7 @@
             </div>
             <div class="producto">
                 <img src="assets/img/IMAGENES/Productos/Producto2.png" alt="">
-                <div>
+                <div class="productoDescripcion">
                     <h3>DULCE DE LECHE SIN AZÚCAR</h3>
                     <p>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.</p>
                     <span>Presentación en frasco de vidrio de 580gr y 280gr.</span>
@@ -72,7 +73,7 @@
             </div>
             <div class="producto">
                 <img src="assets/img/IMAGENES/Productos/Producto3.png" alt="">
-                <div>
+                <div class="productoDescripcion">
                     <h3>DULCE DE LECHE CHOCONUTT</h3>
                     <p>Elaboración artesanal para el capricho dulce, combinación de dulce de leche, chocolate y pasta de avellanas. Una delicia única.</p>
                     <span>Presentación en frasco de vidrio de 280gr.</span>
@@ -80,9 +81,10 @@
                 </div>
             </div>
         </section>
-        <section id="recetas">
+        <section  class="recetas" id="recetas">
             <h2 class="titulos">recetas</h2>
-            <div></div>
+            <div id="recetario" class="recetario">                
+            </div>
         </section>
         <section class="contacto" id="contacto">
             <h2 class="titulos">Contáctanos</h2>
@@ -101,28 +103,32 @@
         </section>
     </main>
     <footer>
+        <h2 class="titulos">Encontranos en</h2>
         <div>
-            <img src="assets/img/IMAGENES/Logo/HconDulce100x100.png" alt="logo_humaya">
-        </div>
-        <div>
-            <h4>Navegación</h4>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Distribuidores</a>
-            <a href="#">Prensa</a>
-            <a href="#">Recetas exclusivas</a>
-        </div>
-        <div>
-            <h4>Redes</h4>
-            <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok fa-2xl" style="color: #ffffff;"></i></a>
-        </div>
-        <div id="locales">
-            <h4>Ubicación</h4>
-            <span>Montes de Oca 2356, CABA</span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0392292867527!2d-58.370521100000005!3d-34.6537122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1694296100914!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <img src="assets/img/IMAGENES/Logo/HconDulce100x100.png" alt="logo_humaya">
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Distribuidores</a>
+                <a href="#">Prensa</a>
+                <a href="#">Recetas exclusivas</a>
+            </div>
+            <div>
+                <h4>Redes</h4>
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok fa-2xl" style="color: #ffffff;"></i></a>
+            </div>
+            <div id="locales">
+                <h4>Ubicación</h4>
+                <span>Montes de Oca 2356, CABA</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0392292867527!2d-58.370521100000005!3d-34.6537122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1694296100914!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/364fe3b5cd.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
